@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vitest",
-    "test": "vitest --run",
+    "test": "vitest --run --globals",
     "build": "tsup ./main.ts --format cjs,esm --dts",
     "lint": "tsc",
     "clean": "rimraf ./dist && rimraf ./node_modules && pnpm install --frozen-lockfile",
