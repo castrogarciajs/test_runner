@@ -1,0 +1,17 @@
+{
+  "name": "zod_message_os",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup ./main.ts --format cjs,esm --dts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.8.6",
+    "tsup": "7.2.0",
+    "typescript": "5.2.2"
+  }
+}
