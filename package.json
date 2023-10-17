@@ -8,7 +8,8 @@
     "test": "vitest --run",
     "build": "tsup ./main.ts --format cjs,esm --dts",
     "lint": "tsc",
-    "clean": "rimraf ./dist && rimraf ./node_modules && pnpm install"
+    "clean": "rimraf ./dist && rimraf ./node_modules && pnpm install --frozen-lockfile",
+    "ci": "pnpm run lint && pnpm run build && pnpm run test"
   },
   "keywords": [],
   "author": "",
