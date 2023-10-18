@@ -1,6 +1,6 @@
 {
   "name": "@labs-pkg/test-runner",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The package publish runner",
   "private": false,
   "main": "./dist/main.js",
