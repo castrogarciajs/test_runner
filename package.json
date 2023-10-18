@@ -1,20 +1,24 @@
 {
-  "name": "zod_message_os",
-  "version": "1.0.0",
+  "name": "@lab-pkg/test-runner",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/main.js",
+  "module": "./dist/main.mjs",
+  "types": "./dist/main.d.ts",
   "scripts": {
     "dev": "vitest",
-    "test": "vitest --run",
+    "test": "vitest --run --globals",
     "build": "tsup ./main.ts --format cjs,esm --dts",
     "lint": "tsc",
     "clean": "rimraf ./dist && rimraf ./node_modules && pnpm install --frozen-lockfile",
-    "ci": "pnpm run lint && pnpm run build && pnpm run test"
+    "ci": "pnpm run lint && pnpm run build && pnpm run test",
+    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
   },
   "keywords": [],
-  "author": "",
+  "author": "castrogarciajs",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "2.26.2",
     "@types/node": "20.8.6",
     "rimraf": "5.0.5",
     "tsup": "7.2.0",
