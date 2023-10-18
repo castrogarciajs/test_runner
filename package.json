@@ -1,7 +1,7 @@
 {
   "name": "@lab-pkg/test-runner",
   "version": "0.0.2",
-  "description": "",
+  "description": "The package publish runner",
   "private": false,
   "main": "./dist/main.js",
   "module": "./dist/main.mjs",
@@ -16,6 +16,11 @@
     "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castrogarciajs/test_runner.git",
+    "directory": "test_runner"
+  },
   "author": "castrogarciajs",
   "license": "MIT",
   "devDependencies": {
