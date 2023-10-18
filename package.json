@@ -2,6 +2,7 @@
   "name": "@lab-pkg/test-runner",
   "version": "0.0.2",
   "description": "",
+  "private": false,
   "main": "./dist/main.js",
   "module": "./dist/main.mjs",
   "types": "./dist/main.d.ts",
