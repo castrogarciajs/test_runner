@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vitest --globals",
     "test": "vitest --run --globals",
-    "build": "tsup ./bin/main.ts --format cjs,esm --dts",
+    "build": "tsup ./typescript/main.ts --format cjs,esm --dts",
     "lint": "tsc --noEmit",
     "clean": "rimraf ./dist && rimraf ./node_modules && pnpm install --frozen-lockfile",
     "ci": "pnpm run lint && pnpm run build && pnpm run test",
