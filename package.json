@@ -10,7 +10,7 @@
     "dev": "vitest",
     "test": "vitest --run --globals",
     "build": "tsup ./main.ts --format cjs,esm --dts",
-    "lint": "tsc",
+    "lint": "tsc --noEmit",
     "clean": "rimraf ./dist && rimraf ./node_modules && pnpm install --frozen-lockfile",
     "ci": "pnpm run lint && pnpm run build && pnpm run test",
     "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
