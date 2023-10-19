@@ -1,7 +1,5 @@
 {
-	"$schema": "https://json.schemastore.org/prettierrc",
-	"singleQuote": true,
-	"semi": false,
-	"useTabs": true,
-	"printWidth": 100
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "singleQuote": true,
+  "semi": false
 }
