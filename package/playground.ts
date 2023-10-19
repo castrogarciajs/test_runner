@@ -19,4 +19,4 @@ send({
   password: 'test',
 })
 
-message.createListener((event) => {})
+message.createReceiver((event) => {})
