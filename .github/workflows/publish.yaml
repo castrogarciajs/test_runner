@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     branches:
-      - "main"
+      - 'main'
 
 concurrency: ${{ github.workflows }}-${{ github.ref }}
 
@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 18.x
           cache: pnpm
-      
+
       - run: pnpm install --frozen-lockfile
       - name: Create Release Pull request or publish
         id: changesets
