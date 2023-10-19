@@ -11,7 +11,7 @@ export const defineMessageProtocol = <
     createSender(func: (event: EventAsDiscoUnion) => void) {
       return func
     },
-    createListener(func: (event: EventAsDiscoUnion) => void) {
+    createReceiver(func: (event: EventAsDiscoUnion) => void) {
       return func
     },
   }
