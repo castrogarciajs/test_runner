@@ -1,5 +1,11 @@
 # @lab-pkg/test-runner
 
+## 0.1.0
+
+### Minor Changes
+
+- 41f5c0d: Added defineMessageProtocol Api
+
 ## 0.0.3
 
 ### Patch Changes
